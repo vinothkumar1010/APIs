@@ -1,0 +1,32 @@
+{
+  "name": "vueservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinoth Kumar",
+  "license": "ISC",
+  "homepage": "https://github.com/gdomaradzki/focus-gestor-orcamentos#readme",
+"_moduleAliases": {
+    "@root": ".",
+    "@sampleVueService":"./services/sampleServiceGit",
+    "@sampleVueModels":"./services/sampleServiceGit/app/models",
+    "@sampleVueAPI":"./services/sampleServiceGit/config/app.js",
+    "@config": "./services/sampleServiceGit/config/index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "module-alias": "^2.1.0",
+    "mongoose": "^5.2.1",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
