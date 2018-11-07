@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 const api = {};
 api.setup = (User) => (req, res) => {
   const admin = new User({
-    username: 'admin',
-    password: 'admin',
-    emailid:'sample@sample.com',
-    dateofbirth:'01/01/2001'
+    username: 'admin1',
+    password: 'admin1',
+    emailid:'sample1@sample.com',
+    dateofbirth:'01/07/2001'
   });
 admin.save(error => {
     if (error) throw error;
@@ -23,6 +23,7 @@ api.index = (User, sampleVueToken) => (req, res) => {
     } else return res.status(403).send({ success: false, message: 'Unauthorized' });
   }
   api.signup = (User) => (req, res) => {
+    console.log(req.body);
     if (!req.body.username || !req.body.password) res.json({ success: false, message: 'Please, pass a username and password.' });
     else {
       const newUser = new User({
@@ -36,5 +37,8 @@ api.index = (User, sampleVueToken) => (req, res) => {
         res.json({ success: true, message: 'Account created successfully' });
       })
     }
+  }
+  api.login=(User)=>(req,res)=>{
+    console.log(req.body);
   }
   module.exports = api;

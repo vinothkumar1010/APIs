@@ -9,11 +9,11 @@
   "author": "Vinoth Kumar",
   "license": "ISC",
   "homepage": "https://github.com/gdomaradzki/focus-gestor-orcamentos#readme",
-"_moduleAliases": {
+  "_moduleAliases": {
     "@root": ".",
-    "@sampleVueService":"./services/sampleServiceGit",
-    "@sampleVueModels":"./services/sampleServiceGit/app/models",
-    "@sampleVueAPI":"./services/sampleServiceGit/config/app.js",
+    "@sampleVueService": "./services/sampleServiceGit",
+    "@sampleVueModels": "./services/sampleServiceGit/app/models",
+    "@sampleVueAPI": "./services/sampleServiceGit/config/app.js",
     "@config": "./services/sampleServiceGit/config/index.js"
   },
   "dependencies": {

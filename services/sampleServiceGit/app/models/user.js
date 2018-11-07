@@ -20,8 +20,7 @@ const Schema = mongoose.Schema({
     dateofbirth:
     {
         type:Date,
-        required:true,
-        unique:true
+        required:true
     },
     created_date:{
         type:Date,
